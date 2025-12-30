@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title> FAMILY </title>
+    <link rel="stylesheet" href="STYLE.css">
+</head>
+
+<body>
+
+<header>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <a href="HOME.html">HOME</a>
+        <a href="ABOUT ME.html">ABOUT ME</a>
+        <a href="EDUCATION.html">EDUCATION</a>
+        <a href="EXPERIENCE AND SKILL.html">EXPERIENCE AND SKILL</a>
+        <a href="FAMILY.html">FAMILY</a>
+        <a href="GALLERY.html">GALLERY</a>
+        <a href="CONTACT.html">CONTACT</a>
+    </nav>
+
+    <div class="logo">
+        <h1>MY FAMILY <3 </h1>
+    </div>
+</header>
+
+
+<!-- Family Introduction -->
+<div class="card-box">
+    <div class="card-info">
+        <p><h3>My family? My family consists of 7 people, including my brother-in-law who married my eldest sister in 2019. 
+		I have 4 siblings and I am the youngest. I have one sister and two brothers. My dad's name is Abdul Razak bin Ibrahim and
+		my mom's name is Wan Teh binti Wan Saad. They are my backbone throughout my studies and the biggest reason I stay 
+		motivated for success in the future.</h3></p>
+    </div>
+</div>
+
+<!-- Family Photos with Arrow Navigation -->
+<div class="card-box">
+    <div class="card-info">
+        <h3>SWEET MOMENTS</h3>
+        <div class="gallery">
+            <div class="gallery-item active">
+                <img src="images/fam anis.jpg" alt="Family Photo 1">
+                <p><b>RAYA 2025</b></p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/fammm.jpg" alt="Family Photo 3">
+                <p><b>FAMILY GATHERING</b></p>
+            </div>
+            <div class="arrow left-arrow" onclick="changeImage(-1)">&#10094;</div>
+            <div class="arrow right-arrow" onclick="changeImage(1)">&#10095;</div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p> © 2025 NUR ANIS SYAZLIN. All Rights Reserved.</p>
+</footer>
+
+<script>
+    var currentIndex = 0;
+    var images = document.querySelectorAll('.gallery-item');
+
+    function changeImage(direction) {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + direction + images.length) % images.length;
+        images[currentIndex].classList.add('active');
+    }
+</script>
+
+</body>
+</html>
