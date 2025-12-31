@@ -8,7 +8,7 @@
 
 <header>
 
-    <!-- Navigation Menu -->
+    
     <nav>
         <a href="HOME.html">HOME</a>
         <a href="ABOUT ME.html">ABOUT ME</a>
@@ -25,7 +25,7 @@
     
 </header>
 
-<!-- Jam berada di bawah navigation -->
+
 <div id="clock" style="font-size: 30px; color: maroon; font-weight: bold; text-align: right; padding-center: 30px; margin-top: 10px;"></div>
 
 <div class="home-box">
@@ -42,47 +42,47 @@
     <p> © 2025 NUR ANIS SYAZLIN. All Rights Reserved.</p>
 </footer>
 
-<!-- ✨ Humanized JavaScript begins here -->
+
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        // Typewriter effect for "Bonjour! I am Anis Syazlin :3"
+        
         var welcomeText = document.querySelector(".welcome");
         var message = welcomeText.textContent;
-        welcomeText.textContent = ""; // Clear the text initially
+        welcomeText.textContent = ""; 
 
         var index = 0;
-        var typingSpeed = 70; // Lower values make the typing effect faster
+        var typingSpeed = 70; 
 
         var typeEffect = setInterval(function () {
             if (index < message.length) {
                 welcomeText.textContent += message.charAt(index);
                 index++;
             } else {
-                clearInterval(typeEffect); // Stop the typing effect
+                clearInterval(typeEffect); 
             }
         }, typingSpeed);
 
-        // Smooth image animation (up and down)
+       
         var image = document.querySelector(".home-img img");
         var imgPosition = 0;
         var movementDirection = 1;
 
         setInterval(function () {
-            imgPosition += movementDirection * 0.5; // Slow movement
+            imgPosition += movementDirection * 0.5; 
             if (imgPosition > 5 || imgPosition < -5) {
-                movementDirection *= -1; // Reverse direction when reaching top/bottom
+                movementDirection *= -1; 
             }
             image.style.transform = "translateY(" + imgPosition + "px)";
         }, 30);
 
-        // Real-time clock
+        
         function updateClock() {
             var currentTime = new Date();
             var hours = currentTime.getHours();
             var minutes = currentTime.getMinutes();
             var seconds = currentTime.getSeconds();
             
-            // Format time with leading zeros
+           
             hours = hours < 10 ? '0' + hours : hours;
             minutes = minutes < 10 ? '0' + minutes : minutes;
             seconds = seconds < 10 ? '0' + seconds : seconds;
@@ -91,14 +91,14 @@
             document.getElementById('clock').textContent = timeString;
         }
 
-        // Update clock every second (1000ms)
+        
         setInterval(updateClock, 1000);
-        updateClock(); // Initial call to display the time immediately
+        updateClock(); 
     });
 </script>
-<!-- ✨ JavaScript ends here -->
 
 </body>
 </html>
+
 
 
