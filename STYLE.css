@@ -1,4 +1,3 @@
-/* GLOBAL STYLE */
 body {
     font-family: "Times New Roman", serif;
     background-color: wheat;
@@ -7,7 +6,7 @@ body {
     text-align: center;
 }
 
-/* TITLES */
+
 h1 {
     color: white;
     background: maroon;
@@ -22,14 +21,14 @@ h2 {
     border-radius: 10px;
 }
 
-/* HEADER */
+
 header {
     text-align: center;
     padding: 25px;
     color: maroon;
 }
 
-/* NAVIGATION */
+
 nav {
     background-color: brown;
     padding: 25px;
@@ -50,7 +49,7 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* CLOCK POSITION - BELOW NAVIGATION */
+
 #clock {
     font-size: 25px;
     color: maroon;
@@ -61,7 +60,7 @@ nav a:hover {
     position: relative;
 }
 
-/* IMAGES */
+
 img {
     margin-top: 50px;
     width: 200px;
@@ -69,7 +68,7 @@ img {
     border-radius: 25px;
 }
 
-/* FOOTER */
+
 footer {
     background-color: maroon;
     color: white;
@@ -81,7 +80,7 @@ footer {
 }
 
 
-/* CARD BOX (ABOUT/EXPERIENCE/SKILLS/CONTACT) */
+
 .card-box {
     width: 80%;
     max-width: 900px;
@@ -127,7 +126,7 @@ footer {
     font-size: 16px;
 }
 
-/* HOME PAGE */
+
 .home-box {
     display: flex;
     justify-content: center;
@@ -161,7 +160,7 @@ footer {
     border: 3px solid brown;
 }
 
-/* EDUCATION BOX */
+
 .education-box {
     border: 5px ridge grey;
     background-color: white;
@@ -179,10 +178,10 @@ footer {
     margin-bottom: 15px;
 }
 
-/* GALLERY GRID FIXED — 3 PER ROW */
+
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 25px;
     width: 90%;
     margin: 0 auto;
@@ -216,7 +215,7 @@ footer {
     text-align: center;
 }
 
-/* FAMILY PAGE - CARD BOX */
+
 .card-box {
     width: 80%;
     max-width: 900px;
@@ -254,7 +253,7 @@ footer {
     color: #333;
 }
 
-/* FAMILY PHOTO GALLERY */
+
 .gallery {
     display: flex;
     justify-content: space-around;
@@ -284,15 +283,15 @@ footer {
  .gallery {
             position: relative;
             width: 100%;
-            max-width: 800px;  /* Increased max-width */
+            max-width: 800px;  
             margin: auto;
         }
 
         .gallery-item {
             display: none;
             width: 100%;
-            max-height: 600px;  /* Increased max-height for larger image display */
-            object-fit: cover;  /* Ensures image fits the container without distortion */
+            max-height: 600px;  
+            object-fit: cover;  
         }
 
         .gallery-item.active {
@@ -322,7 +321,7 @@ footer {
             right: 10px;
         }
 
-/* FOOTER */
+
 footer {
     background-color: maroon;
     color: white;
@@ -332,3 +331,4 @@ footer {
     border-top: 5px ridge white;
     font-weight: bold;
 }
+
