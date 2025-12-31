@@ -8,7 +8,7 @@
 
 <header>
 
-    <!-- NAVIGATION BAR -->
+
     <nav>
         <a href="HOME.html">HOME</a>
         <a href="ABOUT ME.html">ABOUT ME</a>
@@ -27,76 +27,76 @@
 <div class="container">
     <h1 class="title"> MY GALLERY </h1>
 
-    <!-- GALLERY GRID -->
+   
     <div class="gallery-container">
 
-        <!-- CARD 1 -->
+        
         <div class="gallery-card">
             <p class="caption"><b>My 1st semester</b></p>
             <img src="images/anis sem 1.jpg" alt="first semester">
         </div>
 
-        <!-- CARD 2 -->
+        
         <div class="gallery-card">
             <p class="caption"><b>My 2nd semester</b></p>
             <img src="images/anis sem 2.jpg" alt="second semester">
         </div>
 
-        <!-- CARD 3 -->
+        
         <div class="gallery-card">
             <p class="caption"><b>My 3rd semester</b></p>
             <img src="images/anis sem 3.jpg" alt="third semester">
         </div>
 
-        <!-- CARD 4 -->
+        
         <div class="gallery-card">
             <p class="caption"><b>My 4th semester</b></p>
             <img src="images/anis sem 4.jpg" alt="fourth semester">
         </div>
 
-        <!-- CARD 5 -->
+        
         <div class="gallery-card">
             <p class="caption"><b>My beloved parents</b></p>
             <img src="images/parents anis.jpg" alt="my parents">
         </div>
 
-        <!-- CARD 6 -->
+       
         <div class="gallery-card">
             <p class="caption"><b>My family during raya 2025</b></p>
             <img src="images/fam anis.jpg" alt="my family">
         </div>
 
-        <!-- CARD 7 -->
+        
         <div class="gallery-card">
             <p class="caption"><b>My diploma's classmates</b></p>
             <img src="images/classmates.jpg" alt="my diploma classmates">
         </div>
 
-        <!-- CARD 8 -->
+       
         <div class="gallery-card">
             <p class="caption"><b>Groupmates</b></p>
             <img src="images/groupmates.jpg" alt="my groupmates">
         </div>
 
-        <!-- CARD 9 -->
+        
         <div class="gallery-card">
             <p class="caption"><b>Hiking to Gunung Jerai</b></p>
             <img src="images/gunung jerai.jpg" alt="trip">
         </div>
 
-        <!-- CARD 10 -->
+        
         <div class="gallery-card">
             <p class="caption"><b>5B Girls</b></p>
             <img src="images/girls.jpg" alt="girly">
         </div>
 		
-		<!-- CARD 11 -->
+		
         <div class="gallery-card">
             <p class="caption"><b>My friends </b></p>
             <img src="images/gang.jpg" alt="gangg">
         </div>
 		
-		<!-- CARD 12 -->
+		
         <div class="gallery-card">
             <p class="caption"><b>Penang's trip</b></p>
             <img src="images/trip penang.jpg" alt="mandi sungai">
@@ -112,10 +112,10 @@
 
 
 
-<!-- JavaScript menarik -->
+
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        // Hover effect untuk membesarkan gambar
+        
         var cards = document.querySelectorAll(".gallery-card img");
         cards.forEach(function (card) {
             card.style.transition = "transform 0.3s ease-in-out";
@@ -127,22 +127,23 @@
             });
         });
 
-        // Fade-in untuk gambar dalam gallery
+        
         var galleryCards = document.querySelectorAll(".gallery-card");
         galleryCards.forEach(function (card, index) {
             card.style.opacity = 0;
             card.style.transform = "translateY(20px)";
             card.style.transition = "opacity 0.5s ease, transform 0.5s ease";
 
-            // Delay untuk setiap gambar muncul
+            
             setTimeout(function () {
                 card.style.opacity = 1;
                 card.style.transform = "translateY(0)";
-            }, index * 200);  // Delaykan setiap gambar sedikit
+            }, index * 200);  
         });
     });
 </script>
 
 </body>
 </html>
+
 
